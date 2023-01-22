@@ -1,0 +1,1 @@
+# instalar-metabase-no-linux
