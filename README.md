@@ -247,17 +247,17 @@ http://metabase01.mydomain.com:3000/setup
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.1.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.1.png" width="700" height="400"/>|
 
 --- PRONTO !
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.4.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.4.png" width="700" height="400"/>|
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.5.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.5.png" width="800" height="500"/>|
 
 ------------------------------------------------------------------------------------
 --- 14 - ALTERAR PORTA PADRÃO DO METABASE
