@@ -46,7 +46,6 @@ OBSERVAÇÕES: </br>
 ```
 sudo apt update -y && sudo apt install openjdk-11-jdk openjdk-11-jre -y
 ```
-</br>
 
 ------------------------------------------------------------------------------------
 --- 04 - INSTALAR O MARIA DB
@@ -55,7 +54,6 @@ sudo apt update -y && sudo apt install openjdk-11-jdk openjdk-11-jre -y
 ```
 sudo apt install mariadb-server && sudo systemctl start mariadb && sudo systemctl enable mariadb && sudo systemctl status mariadb
 ```
-</br>
 
 
 ------------------------------------------------------------------------------------
@@ -65,7 +63,6 @@ sudo apt install mariadb-server && sudo systemctl start mariadb && sudo systemct
 ```
 sudo mysql_secure_installation
 ```
-</br>
 
 ||
 |---|
@@ -79,14 +76,12 @@ sudo mysql_secure_installation
 ```
 sudo mysql -u root -p
 ```
-</br>
 
 --- CRIAR DATABASE: </br>
 
 ```
 CREATE DATABASE metabase;
 ```
-</br>
 
 --- CRIAR USER METABASE NO MARIA DB: </br>
 
@@ -108,7 +103,6 @@ Observação: Eu liberei acesso a todas as bases. Mas você DEVE restringir o ac
 ```
 cd /Dados/Metabase/ && wget https://downloads.metabase.com/v0.36.7/metabase.jar
 ```
-</br>
 
 ------------------------------------------------------------------------------------
 --- 08 - AJUSTAR PERMISSÕES USER METABASE
@@ -120,7 +114,6 @@ sudo useradd -r -s /bin/false -g metabase metabase &&
 sudo chown -R metabase:metabase /Dados/Metabase &&
 sudo touch /Dados/Metabase/log/metabase.log && sudo chown metabase:metabase /Dados/Metabase/log/metabase.log
 ```
-</br>
 
 ------------------------------------------------------------------------------------
 --- 09 - CRIAR O ARQUIVO DE SERVIÇO DO METABASE
@@ -129,7 +122,6 @@ sudo touch /Dados/Metabase/log/metabase.log && sudo chown metabase:metabase /Dad
 ```
 sudo nano /etc/systemd/system/metabase.service
 ```
-</br>
 
 --- COLAR O SCRIPT ABAIXO E SALVAR O ARQUIVO: </br>
 
@@ -163,7 +155,6 @@ WantedBy=multi-user.target
 ```
 sudo nano /etc/rsyslog.d/metabase.conf
 ```
-</br>
 
 --- COLAR O SCRIPT ABAIXO E SALVAR O ARQUIVO: </br>
 
@@ -175,7 +166,6 @@ if $programname == 'metabase' then /Dados/Metabase/log/metabase.log
 ```
 sudo systemctl restart rsyslog.service
 ```
-</br>
 
 ------------------------------------------------------------------------------------
 --- 11 - CRIAR O ARQUIVO DE CONFIGURAÇÃO DO METABASE
@@ -184,7 +174,6 @@ sudo systemctl restart rsyslog.service
 ```
 sudo nano /etc/default/metabase
 ```
-</br>
 
 --- COLAR O SCRIPT ABAIXO E SALVAR O ARQUIVO: </br>
 
@@ -203,7 +192,6 @@ MB_EMOJI_IN_LOGS=true
 ```
 sudo systemctl daemon-reload && sudo systemctl start metabase && sudo systemctl enable metabase && sudo systemctl status metabase
 ```
-</br>
 
 
 ------------------------------------------------------------------------------------
@@ -213,14 +201,12 @@ sudo systemctl daemon-reload && sudo systemctl start metabase && sudo systemctl 
 ```
 sudo apt install nginx -y
 ```
-</br>
 
 --- CRIAR FILE NGINX: </br>
 
 ```
 sudo nano /etc/nginx/sites-available/metabase
 ```
-</br>
 
 --- COLAR O SCRIPT ABAIXO E SALVAR O ARQUIVO: </br>
 
@@ -231,12 +217,6 @@ server {
 
      server_name metabase01.mydomain.com;
 
-     location / {
-         proxy_set_header X-Forwarded-Host $host;
-         proxy_set_header X-Forwarded-Server $host;
-         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-         proxy_pass http://localhost:3000;
-         client_max_body_size 100M;
      }
 }
 
@@ -288,7 +268,6 @@ http://metabase01.mydomain.com:3000/setup
 ```
 sudo nano /etc/nginx/sites-available/metabase
 ```
-</br>
 
 --- COLAR O SCRIPT ABAIXO E SALVAR O ARQUIVO: </br>
 
