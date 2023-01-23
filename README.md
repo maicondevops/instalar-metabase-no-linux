@@ -67,10 +67,9 @@ sudo mysql_secure_installation
 ```
 </br>
 
-
 ||
 |---|
-|<img src="https://github.com/maicondevops/criar-cluster-mongodb-replicaset/blob/1eff1757f6fec0bf78f94e20c21d208501f9b577/img/passo0x.1.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo05.1.png" width="700" height="200"/>|
 
 ------------------------------------------------------------------------------------
 --- 06 - CRIAR UM DATABASE PARA O METABASE NO MARIA DB
@@ -268,14 +267,17 @@ http://metabase01.mydomain.com:3000/setup
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/criar-cluster-mongodb-replicaset/blob/1eff1757f6fec0bf78f94e20c21d208501f9b577/img/passo0x.1.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.1.png" width="700" height="200"/>|
 
 --- PRONTO !
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/criar-cluster-mongodb-replicaset/blob/1eff1757f6fec0bf78f94e20c21d208501f9b577/img/passo0x.1.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.4.png" width="700" height="200"/>|
 
+||
+|---|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo13.5.png" width="700" height="200"/>|
 
 ------------------------------------------------------------------------------------
 --- 14 - ALTERAR PORTA PADRÃO DO METABASE
@@ -317,4 +319,4 @@ sudo ln -s /etc/nginx/sites-available/metabase /etc/nginx/sites-enabled/metabase
 
 ||
 |---|
-|<img src="https://github.com/maicondevops/criar-cluster-mongodb-replicaset/blob/1eff1757f6fec0bf78f94e20c21d208501f9b577/img/passo0x.1.png" width="700" height="200"/>|
+|<img src="https://github.com/maicondevops/instalar-metabase-no-linux/blob/59cf29c9f29acadacd394e5103eb3c38f9184a2a/img/passo14.1.png" width="700" height="200"/>|
