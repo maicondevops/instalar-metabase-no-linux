@@ -15,9 +15,9 @@
 
 ```
 cd /Dados
-sudo /Dados/Metabase
+sudo mkdir Metabase
 cd Metabase
-sudo mkdir /Dados/Metabase/log 
+sudo mkdir log 
 ``` 
 </br>
 
